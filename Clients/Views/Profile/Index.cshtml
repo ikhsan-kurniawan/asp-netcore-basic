@@ -1,0 +1,191 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Layout/MainLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+
+            <!-- Profile Image -->
+            <div class="card card-primary card-outline">
+                <div class="card-body box-profile">
+                    <div class="text-center">
+                        <img class="profile-user-img img-fluid img-circle"
+                             src="~/adminlte-3.2.0/dist/img/user2-160x160.jpg"
+                             alt="User profile picture">
+                    </div>
+
+                    <h3 class="profile-username text-center" id="fullName"></h3>
+
+
+                    <ul class="list-group list-group-unbordered mb-3">
+                        <li class="list-group-item">
+                            <b>NIK</b> <span id="nik" class="float-right"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Email</b> <span id="email" class="float-right"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Telepon</b> <span id="phone" class="float-right"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Tanggal Lahir</b> <span id="birthDate" class="float-right"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Nama Universitas</b> <span id="universityName" class="float-right"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>GPA</b> <span id="gpa" class="float-right"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Degree</b> <span id="degree" class="float-right"></span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Roles</b> <span id="roles" class="float-right"></span>
+                        </li>
+                    </ul>
+
+                    @if (ViewBag.Roles.Contains("Employee"))
+                    {
+                        <button style="display:none" type="button" class="btn btn-primary edit" data-toggle="modal" data-target="#modal-default">
+                            Edit Profile
+                        </button>
+                        <div class="modal fade" id="modal-default">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Edit Profile</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="editForm">
+                                            <div class="card-body">
+                                                <div class="text-center">
+                                                    <img class="profile-user-img img-fluid img-circle"
+                                                         src="~/adminlte-3.2.0/dist/img/user2-160x160.jpg"
+                                                         alt="User profile picture">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNik">NIK</label>
+                                                    <input disabled name="inputNik" type="text" class="form-control" id="inputNik" placeholder="NIK">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNamaDepan">Nama Depan</label>
+                                                    <input name="inputNamaDepan" type="text" class="form-control" id="inputNamaDepan" placeholder="Nama Depan">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNamaBelakang">Nama Belakang</label>
+                                                    <input name="inputNamaBelakang" type="text" class="form-control" id="inputNamaBelakang" placeholder="Nama Belakang">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputTelepon">Nomor Telepon</label>
+                                                    <input name="inputTelepon" type="text" class="form-control" id="inputTelepon" placeholder="Nomor Telepon">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputTanggalLahir">Tanggal Lahir</label>
+                                                    <input name="inputTanggalLahir" type="date" class="form-control" id="inputTanggalLahir" placeholder="Tanggal Lahir">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputEmail">Email</label>
+                                                    <input name="inputEmail" type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputUniversity">University</label>
+                                                    <select name="inputUniversity" class="form-control" id="inputUniversity">
+                                                        <option selected disabled='disabled'>--Select University--</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputDegree">Degree</label>
+                                                    <select name="inputDegree" class="form-control" id="inputDegree">
+                                                        <option selected disabled='disabled'>--Select Degree--</option>
+                                                        <option value="0">D3</option>
+                                                        <option value="1">D4</option>
+                                                        <option value="2">S1</option>
+                                                        <option value="3">S2</option>
+                                                        <option value="4">S3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputGpa">GPA</label>
+                                                    <input name="inputGpa" type="number" min="0" max="4" step="0.01" class="form-control" id="inputGpa" placeholder="GPA">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer justify-content-between">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" onclick="Edit()">Save changes</button>
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+
+                    }
+
+
+                    <button style="display:none" type="button" class="btn btn-warning edit" data-toggle="modal" data-target="#editPassword" onclick="clearForm()">
+                        Edit Password
+                    </button>
+                    <div class="modal fade" id="editPassword">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Edit Password</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="editPasswordForm">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img class="profile-user-img img-fluid img-circle"
+                                                     src="~/adminlte-3.2.0/dist/img/user2-160x160.jpg"
+                                                     alt="User profile picture">
+                                            </div>
+                                            <div class="form-group">
+                                                <input hidden disabled name="inputPasswordNik" type="text" class="form-control" id="inputPasswordNik" placeholder="NIK">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPasswordLama">Password Lama</label>
+                                                <input name="inputPasswordLama" type="password" class="form-control" id="inputPasswordLama" placeholder="Password Lama">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPasswordBaru">Password Baru</label>
+                                                <input name="inputPasswordBaru" type="password" class="form-control" id="inputPasswordBaru" placeholder="Password Baru">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPasswordKonfirmasi">Konfirmasi Password Baru</label>
+                                                <input name="inputPasswordKonfirmasi" type="password" class="form-control" id="inputPasswordKonfirmasi" placeholder="Konfirmasi Password">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="EditPassword()">Save changes</button>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+    <!-- /.row -->
+</div><!-- /.container-fluid -->
+@section script {
+    <script src="~/script/ProfileScript.js"></script>
+
+}

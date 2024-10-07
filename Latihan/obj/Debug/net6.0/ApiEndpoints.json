@@ -1,0 +1,338 @@
+[
+  {
+    "ContainingType": "Latihan.Controllers.AccountRolesController",
+    "Method": "GetAccountRoles",
+    "RelativePath": "AccountRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.AccountsController",
+    "Method": "GetAllAccounts",
+    "RelativePath": "Accounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.AccountsController",
+    "Method": "GetAccountById",
+    "RelativePath": "Accounts/{nik}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nik",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.AccountsController",
+    "Method": "UpdateAccount",
+    "RelativePath": "Accounts/{nik}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nik",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "account",
+        "Type": "Latihan.ViewModels.RegisterVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.AccountsController",
+    "Method": "UpdatePassword",
+    "RelativePath": "Accounts/EditPassword/{nik}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nik",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "editPassword",
+        "Type": "Latihan.ViewModels.EditPasswordVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.AccountsController",
+    "Method": "GetEducation",
+    "RelativePath": "Accounts/Education",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.AccountsController",
+    "Method": "Login",
+    "RelativePath": "Accounts/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginVM",
+        "Type": "Latihan.ViewModels.LoginVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.AccountsController",
+    "Method": "Register",
+    "RelativePath": "Accounts/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerVM",
+        "Type": "Latihan.ViewModels.RegisterVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.EmployeesController",
+    "Method": "GetEmployeeById",
+    "RelativePath": "Employees/{nik}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nik",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.EmployeesController",
+    "Method": "UpdateEmployee",
+    "RelativePath": "Employees/{nik}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nik",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "employee",
+        "Type": "Latihan.Models.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.RolesController",
+    "Method": "GetAllRoles",
+    "RelativePath": "Roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.RolesController",
+    "Method": "AddRole",
+    "RelativePath": "Roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "Latihan.Models.Role",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.RolesController",
+    "Method": "GetRoleById",
+    "RelativePath": "Roles/{roleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.RolesController",
+    "Method": "UpdateRole",
+    "RelativePath": "Roles/{roleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "Latihan.Models.Role",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.RolesController",
+    "Method": "DeleteUniversity",
+    "RelativePath": "Roles/{roleId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.UniversitiesController",
+    "Method": "GetAllUniversities",
+    "RelativePath": "Universities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.UniversitiesController",
+    "Method": "AddUniversity",
+    "RelativePath": "Universities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "university",
+        "Type": "Latihan.Models.University",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.UniversitiesController",
+    "Method": "GetUniversityById",
+    "RelativePath": "Universities/{univId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "univId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.UniversitiesController",
+    "Method": "UpdateUniversity",
+    "RelativePath": "Universities/{univId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "univId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "university",
+        "Type": "Latihan.Models.University",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.UniversitiesController",
+    "Method": "DeleteUniversity",
+    "RelativePath": "Universities/{univId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "univId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Latihan.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Latihan.WeatherForecast, Latihan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

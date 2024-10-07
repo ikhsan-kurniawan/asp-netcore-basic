@@ -1,0 +1,118 @@
+﻿
+@{
+    Layout = "~/Views/Layout/MainLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <!-- Button trigger modal -->
+                    <button id="modalButton" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAccountModal" onclick="clearScreen()" data-tooltip="tooltip" data-placement="top" title="Tambah data">
+                        <i class="fas fa-solid fa-plus"></i> Registrasi Akun
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="addAccountModal" tabindex="-1" role="dialog" aria-labelledby="addAccountModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="addAccountModalLabel">Form Account</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="accountForm">
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="inputID" placeholder="ID Account" hidden>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputNamaDepan">Nama Depan</label>
+                                                <input name="inputNamaDepan" type="text" class="form-control" id="inputNamaDepan" placeholder="Nama Depan">
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="inputNamaBelakang">Nama Belakang</label>
+                                                <input name="inputNamaBelakang" type="text" class="form-control" id="inputNamaBelakang" placeholder="Nama Belakang">
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="inputTelepon">Nomor Telepon</label>
+                                                <input name="inputTelepon" type="text" class="form-control" id="inputTelepon" placeholder="Nomor Telepon">
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="inputTanggalLahir">Tanggal Lahir</label>
+                                                <input name="inputTanggalLahir" type="date" class="form-control" id="inputTanggalLahir" placeholder="Tanggal Lahir">
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="inputEmail">Email</label>
+                                                <input name="inputEmail" type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="inputPassword">Password</label>
+                                                <input name="inputPassword" type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="inputUniversity">University</label>
+                                                <select name="inputUniversity" class="form-control" id="inputUniversity">
+                                                    <option selected disabled='disabled'>--Select University--</option>
+                                                </select>
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="inputDegree">Degree</label>
+                                                <select name="inputDegree" class="form-control" id="inputDegree">
+                                                    <option selected disabled='disabled'>--Select Degree--</option>
+                                                    <option value="0">D3</option>
+                                                    <option value="1">S1</option>
+                                                    <option value="2">S2</option>
+                                                    <option value="3">S3</option>
+                                                </select>
+                                            </div>                                            
+                                            <div class="form-group">
+                                                <label for="inputGpa">GPA</label>
+                                                <input name="inputGpa" type="number" min="0" max="4" step="0.01" class="form-control" id="inputGpa" placeholder="GPA">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="editButton" type="button" class="btn btn-warning" onclick="Edit()">Edit</button>
+                                    <button id="saveButton" type="button" class="btn btn-primary" onclick="Save()">Simpan</button>
+                                    <button id="closeButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="accountTable" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>NIK</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Nama Universitas</th>
+                                <th>GPA</th>
+                                <th>Degree</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container-fluid -->
+@section script {
+    <script src="~/script/AccountScript.js"></script>
+
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Latihan", "Latihan\Latihan.csproj", "{474D2FE3-18D5-40D7-B02B-24CB33D2079D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clients", "Clients\Clients.csproj", "{78194A51-4484-413C-B5A3-3473A176EB1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{474D2FE3-18D5-40D7-B02B-24CB33D2079D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474D2FE3-18D5-40D7-B02B-24CB33D2079D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474D2FE3-18D5-40D7-B02B-24CB33D2079D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474D2FE3-18D5-40D7-B02B-24CB33D2079D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78194A51-4484-413C-B5A3-3473A176EB1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78194A51-4484-413C-B5A3-3473A176EB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78194A51-4484-413C-B5A3-3473A176EB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78194A51-4484-413C-B5A3-3473A176EB1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B350622-7C98-4761-8AE8-CAB9DB559801}
+	EndGlobalSection
+EndGlobal

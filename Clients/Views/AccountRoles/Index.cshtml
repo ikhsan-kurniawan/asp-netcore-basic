@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Data Account Roles";
+    Layout = "~/Views/Layout/MainLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="accountrolesTable" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nomor</th>
+                                <th>ID Account Roles</th>
+                                <th>Nama Akun</th>
+                                <th>Nama Roles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container-fluid -->
+@section script {
+    <script src="~/script/AccountRoleScript.js"></script>
+
+}

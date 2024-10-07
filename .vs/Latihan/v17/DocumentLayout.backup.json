@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ikhsan.kurniawan\\source\\repos\\Latihan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78194A51-4484-413C-B5A3-3473A176EB1E}|Clients\\Clients.csproj|c:\\users\\ikhsan.kurniawan\\source\\repos\\latihan\\clients\\wwwroot\\script\\accountscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{78194A51-4484-413C-B5A3-3473A176EB1E}|Clients\\Clients.csproj|solutionrelative:clients\\wwwroot\\script\\accountscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountScript.js",
+              "DocumentMoniker": "C:\\Users\\ikhsan.kurniawan\\source\\repos\\Latihan\\Clients\\wwwroot\\script\\AccountScript.js",
+              "RelativeDocumentMoniker": "Clients\\wwwroot\\script\\AccountScript.js",
+              "ToolTip": "C:\\Users\\ikhsan.kurniawan\\source\\repos\\Latihan\\Clients\\wwwroot\\script\\AccountScript.js",
+              "RelativeToolTip": "Clients\\wwwroot\\script\\AccountScript.js",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAmwK0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-03T08:33:58.64Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

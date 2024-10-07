@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "Clients.Controllers.SessionController",
+    "Method": "GetSession",
+    "RelativePath": "Session",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clients.Controllers.SessionController",
+    "Method": "RemoveSession",
+    "RelativePath": "Session/RemoveSession",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clients.Controllers.SessionController",
+    "Method": "SetSession",
+    "RelativePath": "Session/SetSession",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "session",
+        "Type": "Clients.Controllers.SessionVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
